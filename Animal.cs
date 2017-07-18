@@ -1,4 +1,4 @@
-namespace anymels
+namespace Anymels
 {
     public class Animal
     {

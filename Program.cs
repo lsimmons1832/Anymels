@@ -1,31 +1,33 @@
 ﻿using System;
 
-namespace anymels
+namespace Anymels
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var RainForest = new Forest("Daintree Rainforest", "Australia");
+            var Daintree = new Forest("Daintree Rainforest", "Australia");
+            var Amazon = new Forest("Amazon Rainforest", "Brazil");
 
             var Kangaroo = new Animal
             {
                 Fur = "Short",
                 NumOfLegs = 3,
-                Name = "Kangaroo"
+                Name = "Kangaroos"
             };
 
             var Lemur = new Animal
             {
                 Fur = "Thick",
                 NumOfLegs = 4,
-                Name = "Lemur"
+                Name = "Lemurs"
             };
 
-            RainForest.AddAnymels(Kangaroo);
-            RainForest.AddAnymels(Lemur);
+            Daintree.AddAnymels(Kangaroo);
+            Amazon.AddAnymels(Lemur);
 
-            RainForest.ListofAnymels();
+            Daintree.ListofAnymels();
+            Amazon.ListofAnymels();
         }
     }
 }
